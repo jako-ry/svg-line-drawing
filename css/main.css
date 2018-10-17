@@ -6,4 +6,94 @@ h1 {
   left: 70px;
   max-width: 290px;
   z-index: 2;
+  animation: fadein 1s linear;
+}
+
+@keyframes fadein {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
+#rainbow-violet {
+  animation: draw 1.3s linear forwards;
+  stroke-dasharray: 1918px;
+  stroke-dashoffset: 1918px;
+}
+
+#rainbow-indigo {
+  animation: draw 1.3s linear forwards;
+  stroke-dasharray: 1813px;
+  stroke-dashoffset: 1813px;
+}
+
+#rainbow-blue {
+  animation: draw 1.3s linear forwards;
+  stroke-dasharray: 1706px;
+  stroke-dashoffset: 1706px;
+}
+
+#rainbow-green {
+  animation: draw 1.3s linear forwards;
+  stroke-dasharray: 1597px;
+  stroke-dashoffset: 1597px;
+}
+
+#rainbow-yellow {
+  animation: draw 1.3s linear forwards;
+  stroke-dasharray: 1484px;
+  stroke-dashoffset: 1484px;
+}
+
+#rainbow-orange {
+  animation: draw 1.3s linear forwards;
+  stroke-dasharray: 1367px;
+  stroke-dashoffset: 1367px;
+}
+
+#rainbow-red {
+  animation: draw 1.3s linear forwards;
+  stroke-dasharray: 1244px;
+  stroke-dashoffset: 1244px;
+}
+
+#narwhal-body {
+  animation: draw 1s linear forwards;
+  stroke-dasharray: 1981.415px;
+  stroke-dashoffset: 1981.415px;
+}
+
+@keyframes draw {
+
+  to {
+    stroke-dashoffset: 0;
+  }
+
+}
+
+#narwhal-eye {
+  animation: fade 1s linear forwards;
+  opacity: 0;
+}
+
+@keyframes fade {
+
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
 }
